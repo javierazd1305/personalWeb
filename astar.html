@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JAZD</title>
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/master.css" rel="stylesheet" media="screen">
+    <script src="https://use.fontawesome.com/a0da83b4d6.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- uncomment lines below to include extra p5 libraries -->
+    <script language="javascript" src="libraries/p5.dom.js"></script>
+    <script language="javascript" src="kalmanFilter.js"></script>
+    <script language="javascript" src="astar.js"></script>
+    <!--<script language="javascript" type="text/javascript" src="sketch.js"></script>-->
+
+    <!-- this line removes any default padding and style. you might only need one of these values set. -->
+
+</head>
+
+<body>
+    <div id="project-nav-wrapper">
+        <div class="" id="menu">
+            <img src="img/logo.png" alt="" id="mostrar-nav">
+        </div>
+
+        <nav id="nav-show">
+            <ul class="nav nav-pills nav-stacked">
+                <img src="img/logo.png" alt="" id="mostrar-nav-2">
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="#" class="">About</a></li>
+                <li><a href="projects.html" class="">Projects</a></li>
+                <li><a href="#" class="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="work">
+        <h2>PATHFINDING ALGORITHM</h2>
+        <div class="" id="kalmanDef">
+            <p>Dentro de los algoritmos de <i>rastreo o tracking</i> uno de los más conocidos es Kalman Filter debido a su gran efectividad. Este toma en consideración tanto la estimación, las mediciones de componentes y el <i>ruido</i> que se puede interpretar
+                como el nivel de veracidad de ambas. En la estimación se consideran los valores reales pasados como <i>inputs</i> y el error de las estimaciones pasadas. Estos valores de ajustan en cada iteración. En la medición de considera los datos
+                que se obtienen de un dispositivo y su posible desviación. Estas dos secciones se adicionan y acá es donde entra a tallar el ponderador de <i>Kalman</i> llamado el <b><i>Kalman Gain</i></b>. Este valor se obtiene de la matriz de covarianza
+                las variables involucradas. variables. Esta refleja el grado de confianza que se tiene respecto a qué medida.
+            </p>
+        </div>
+
+        <div class="" id="astar">
+
+        </div>
+    </div>
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
